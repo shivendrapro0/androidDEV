@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Body Monitor</string>
+    <string name="app_message">This app helps you monitor your body status</string>
+</resources>

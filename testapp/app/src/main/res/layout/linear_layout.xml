@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006699">
+
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="20dp"
+        />
+   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:textColor="@color/abc_secondary_text_material_dark"
+           android:textStyle="bold"
+           android:textSize="32sp"
+           android:text="@string/app_message"
+           android:layout_marginBottom="10dp"
+           />
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:textColor="@color/abc_secondary_text_material_dark"
+           android:textSize="20sp"
+           android:text="Blood Pressure"
+           android:textStyle="bold" />
+
+
+         <EditText
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:background="@color/ripple_material_light"
+           android:id="@+id/bloodP" />
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:textColor="@color/abc_secondary_text_material_dark"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:text="Blood Sugar (Random)"/>
+
+
+         <EditText
+           android:layout_width="50dp"
+           android:inputType="numberDecimal"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:id="@+id/bloodS"
+           android:background="@color/ripple_material_light" />
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/abc_secondary_text_material_dark"
+           android:textStyle="bold"
+           android:layout_gravity="center"
+           android:textSize="20sp"
+           android:text="Walking (km)"/>
+
+
+         <EditText
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:inputType="numberDecimal"
+           android:layout_gravity="center"
+           android:background="@color/ripple_material_light"
+           android:id="@+id/walking" />
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:textColor="@color/abc_secondary_text_material_dark"
+           android:textStyle="bold"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:textSize="20sp"
+           android:text="Running (km)"/>
+
+         <EditText
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:inputType="numberDecimal"
+           android:background="@color/ripple_material_light"
+           android:id="@+id/running" />
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:textColor="@color/abc_secondary_text_material_dark"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:text="Cycling (km)"/>
+
+
+         <EditText
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:inputType="numberDecimal"
+           android:background="@color/ripple_material_light"
+           android:id="@+id/cycling" />
+
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/abc_secondary_text_material_dark"
+           android:textStyle="bold"
+           android:layout_gravity="center"
+           android:textSize="20sp"
+           android:text="Weight (kg)"/>
+
+
+         <EditText
+           android:layout_width="50dp"
+           android:layout_height="wrap_content"
+           android:inputType="numberDecimal"
+           android:layout_gravity="center"
+           android:background="@color/ripple_material_light"
+           android:id="@+id/weight" />
+
+
+         <Button
+           android:id="@+id/submitButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="Submit"/>
+
+      </LinearLayout>
+
+   </ScrollView>
+
+</LinearLayout>
