@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:background="#006699"
     android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:onClick="setOnClickListener">
 
     <ImageView
         android:layout_width="420dp"
@@ -32,12 +33,29 @@
         android:text="Entery is saved today come back tomorrow !!"
         android:textStyle="bold" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/buttonviewD"
+        android:text="VIEW DATA"
+        android:onClick="setOnClickListener" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/viewD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp" />
 
+    <!--
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="View entered Data"
         android:layout_gravity="center"
         />
-
+    -->
 </LinearLayout>
